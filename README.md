@@ -18,6 +18,8 @@ Reasons to choose our bot:
 
 - Developer-Friendly: Understanding the diverse needs of developers using our bot, as developers ourselves, we are open to any proposals for new features.
 
+- MIT License: Thanks to the MIT license we use, you can freely use and modify the code as you wish. Just remember to give credit to the original creator!
+
 ### How to Set It Up?
 Currently, our team does not provide mass hosting services for your Discord bot. You need to host your bot, MySQL database, and API with your developer team on any service. Our bot does not require much from the server it operates on, but remember to choose servers according to your needs! We can configure our bot on your server for a fee and enable its functionality. Please contact us for more details.
 
