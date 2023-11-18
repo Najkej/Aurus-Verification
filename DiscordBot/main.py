@@ -98,11 +98,10 @@ class OptionsButtons(discord.ui.View):
         dataword[int(interaction.user.id)] = [randomword]
         checkbutton = self.CheckButtons()
         await interaction.response.send_message(f"Zmień opis swojego profilu na roblox na taki zawierający słowo '{randomword}'! Po zmienieniu opisu dotknij przycisku 'Sprawdź opis', gdyby wystąpiły problemy skontaktuj się z administracją!", view=checkbutton, ephemeral=True)
-        print("describe")
 
     @discord.ui.button(label="2. Dołącz na grę!", emoji="🎮", style=discord.ButtonStyle.blurple, custom_id="playgame", disabled=True)
     async def playgame(self, interaction : discord.Interaction, Button: discord.ui.Button):
-        print("playgame")
+        return
 
 
 @bot.event
