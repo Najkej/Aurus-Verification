@@ -7,10 +7,10 @@ Configuration Steps:
 
 MySQL Database: Find your database hosting service; for budget projects, we recommend https://www.db4free.net/. Keep in mind that this is a free hosting service, so the database may not be entirely stable. Create 5 columns in the database: RobloxID (string), DiscordID (string), NickRoblox (string), NickDiscord (string), Verified (bool/boolean). Fill in this table; it will be useful later.
 
-host = "your-host"  // your host's domain address, e.g., db4free.net
-user = "your-username"  // your database username
-password = "your-password"  // your database user password
-database = "your-database"  // your database name, e.g., "Users"
+- host = "your-host"  // your host's domain address, e.g., db4free.net
+- user = "your-username"  // your database username
+- password = "your-password"  // your database user password
+- database = "your-database"  // your database name, e.g., "Users"
 
 Discord Bot: Create a new bot on the Discord Developer Portal (https://discord.com/developers/applications). Make sure to include a mention of the original bot creator in the bot's description or provide a link to the project's GitHub! Copy your bot token and paste it into the last line of DiscordBot->main.py, replacing "Your_bot_token". Also, replace the table in lines 10-13 with the one you created during database hosting. In line 82, there is a command to add a verified role to the user; fill in the line with your role ID or remove it if you don't want to add a role. Hosting the bot can be done on various platforms, but there is no universal free hosting for it; I recommend paid alternatives.
 
