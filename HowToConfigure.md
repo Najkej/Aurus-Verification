@@ -1,7 +1,7 @@
 How to Configure AurusVerification Bot
 This guide is tailored for individuals who are not familiar with databases, server hosting, and related topics. Setting up requires knowledge of Python, Lua, and MySQL databases.
 
-![image](https://github.com/Najkej/Aurus-Verification/assets/74835186/8ca76796-71f1-4e1a-bcff-4a33705a2e56)
+![image](https://github.com/Najkej/Aurus-Verification/assets/74835186/c74e7d6b-73dc-42ae-972c-fd92700efd73)
 
 Configuration Steps:
 
