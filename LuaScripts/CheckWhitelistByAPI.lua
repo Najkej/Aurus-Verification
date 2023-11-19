@@ -8,7 +8,6 @@ game.Players.PlayerAdded:Connect(function(plr)
 	if success then
 		local decodedResponse = httpservice:JSONDecode(response) 
 		
-		print("Odebrano dane JSON:")
 		print(decodedResponse)
 		if not decodedResponse["Not found"] then
 			if decodedResponse["Verified"] == 1 then
