@@ -37,10 +37,8 @@ class VerificationModal(ui.Modal, title='Zweryfikuj swoje konto Roblox!'):
             results = checkdb.fetchall()
 
             if results:
-                print("abc")
                 await interaction.response.send_message(f"Jesteś już zweryfikowany na naszym serwerze! Jeżeli wystąpił błąd skontaktuj się z naszą adminstracją! ", ephemeral=True)
             else:
-                print("bcb")
                 robloxname = requests.get(f"https://users.roblox.com/v1/users/{self.RobloxID.value}").json()["name"]
                 query.execute(f"INSERT INTO Users (RobloxID, DiscordID, Zweryfikowany, NickRoblox, NickDiscord) VALUES ('{self.RobloxID.value}', '{interaction.user.id}', 0, '{robloxname}', '{interaction.user}');")
                 connection.commit()
@@ -69,7 +67,6 @@ class OptionsButtons(discord.ui.View):
         
         @discord.ui.button(label="Sprawdź opis!", emoji="✅", style=discord.ButtonStyle.green, custom_id="main")
         async def check(self, interaction : discord.Interaction, Button: discord.ui.Button):
-            print(dataid)
             valuelist = dataid[interaction.user.id][0]
             req = requests.get(url=f"https://www.roblox.com/users/{valuelist}/profile").text
 
@@ -78,7 +75,6 @@ class OptionsButtons(discord.ui.View):
 
             if dataword[interaction.user.id][0] in requests.get(f"https://users.roblox.com/v1/users/{valuelist}").json()["description"]:
 
-                print("znaleziono")
                 await interaction.user.add_roles(interaction.guild.get_role(1174021413515051058), reason="Pomyślna weryfikacja - AurusVerification")
 
                 verifyquery.execute(f"UPDATE Users SET Zweryfikowany = 1 WHERE DiscordID = '{interaction.user.id}';")
