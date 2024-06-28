@@ -1,3 +1,5 @@
+# PROJECT OUT OF SUPPORT
+
 ![image](https://github.com/Najkej/AurusVerification/assets/74835186/0d56d478-73db-4991-9af8-6f5562d64579)
 
 # AurusVerification
